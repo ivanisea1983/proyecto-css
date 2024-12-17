@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refinería Dos Bocas</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Encabezado con el Menú -->
+    <header>
+        <div class="menu">
+            <div href="index.html" class="logo">Refinería Dos Bocas</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="somos.html">Quiénes Somos</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <div class="principal">
+        <!-- Contenido Principal -->
+        <div class="contenido-home">
+            <h1>La Refinería Dos Bocas</h1>
+            <p><strong>La Refinería Olmeca, conocida como Dos Bocas</strong>, es uno de los proyectos más ambiciosos del sector energético en México. Ubicada en el municipio de Paraíso, Tabasco, esta refinería tiene como objetivo aumentar la producción de combustibles y reducir la dependencia del país en la importación de derivados del petróleo.</p>
+
+            <h2>Importancia del Proyecto</h2>
+            <p>Dos Bocas representa una pieza clave en la estrategia nacional para alcanzar la autosuficiencia energética. Con una capacidad de producción estimada de 340,000 barriles diarios, la refinería procesará petróleo crudo para producir gasolina, diésel, y otros productos refinados.</p>
+
+            <h3>Impacto Económico y Social</h3>
+            <p>La construcción de esta refinería ha generado miles de empleos directos e indirectos, fortaleciendo la economía local. Además, impulsa la inversión en infraestructura y promueve el desarrollo sostenible en la región.</p>
+
+            <h2>Diseño y Tecnología</h2>
+            <p>Dos Bocas cuenta con tecnología de punta para garantizar la eficiencia y minimizar el impacto ambiental. La refinería también incluye sistemas avanzados de control de emisiones y manejo de residuos.</p>
+        </div>
+
+        <!-- Barra Lateral -->
+        <aside class="barra-lateral">
+            <h2>Artículos Relacionados</h2>
+            <ul>
+                <li><a href="#">Historia de las refinerías en México</a></li>
+                <li><a href="#">El futuro de la energía en Tabasco</a></li>
+                <li><a href="#">Impacto ambiental de las refinerías</a></li>
+                <li><a href="#">Proyectos energéticos en el sureste de México</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Galería de Imágenes -->
+    <section class="galeria">
+        <h2>Galería de Imágenes</h2>
+        <div class="imagenes">
+            <img src="img1.jpg" alt="Refinería desde el aire" onclick="abrirModal(this)">
+            <img src="img2.jpg" alt="Estructuras principales" onclick="abrirModal(this)">
+            <img src="img3.jpg" alt="Trabajos en progreso" onclick="abrirModal(this)">
+        </div>
+    </section>
+
+    <!-- Modal para ampliar imágenes -->
+    <div id="modal" class="modal" style="display: none;">
+        <img id="imagenModal" src="" alt="Imagen ampliada">
+        <button onclick="cerrarModal()">Cerrar</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Refinería Dos Bocas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Funciones para abrir y cerrar el modal
+        function abrirModal(img) {
+            const modal = document.getElementById('modal');
+            const imagenModal = document.getElementById('imagenModal');
+            modal.style.display = 'flex';
+            imagenModal.src = img.src;
+        }
+
+        function cerrarModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
