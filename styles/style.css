@@ -404,3 +404,40 @@ footer p {
 
 
 
+
+
+
+
+
+/* Página 404 */
+.pagina-404 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Evita scroll innecesario */
+}
+
+.pagina-404 .contenedor-404 {
+  background-image: url('imgs/404.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Cubre toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  height: 100%;
+  width: 100%;
+}
+
+/* Media Queries para dispositivos */
+@media (max-width: 768px) {
+  .pagina-404 .contenedor-404 {
+    background-size: contain; /* Ajusta la imagen en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .pagina-404 .contenedor-404 {
+    background-size: contain; /* Mantiene la imagen completa en móviles */
+    background-position: center;
+  }
+}
+
