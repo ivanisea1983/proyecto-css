@@ -8,6 +8,26 @@
 </head>
 <body>
 
+     <!-- Popup de política de cookies -->
+<div id="cookie-popup" class="cookie-popup">
+    <p>
+      Usamos cookies para mejorar tu experiencia en nuestro sitio web. 
+      Al continuar navegando, aceptas nuestra política de cookies.
+    </p>
+    <div class="cookie-buttons">
+      <button class="btn accept" onclick="closeCookiePopup()">Aceptar</button>
+      <button class="btn decline" onclick="closeCookiePopup()">Rechazar</button>
+    </div>
+  </div>
+  
+  <script>
+    // Función para cerrar el popup
+    function closeCookiePopup() {
+      const cookiePopup = document.getElementById('cookie-popup');
+      cookiePopup.style.display = 'none';
+    }
+  </script>
+
     <!-- Encabezado con el Menú -->
     <header>
         <div class="menu">
@@ -15,7 +35,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="quienes-somos.html" class="active">Quiénes Somos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
             </ul>
         </div>
     </header>

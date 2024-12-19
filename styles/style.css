@@ -419,7 +419,7 @@ footer p {
 }
 
 .pagina-404 .contenedor-404 {
-  background-image: url('imgs/404.jpg'); /* Ruta de la imagen */
+  background-image: url('imgs/pagina-404.jpg'); /* Ruta de la imagen */
   background-size: cover; /* Cubre toda la pantalla */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que se repita */
@@ -441,3 +441,64 @@ footer p {
   }
 }
 
+
+
+
+
+/* Diseño del popup */
+.cookie-popup {
+  position: fixed; /* Fija el popup en la pantalla */
+  bottom: 0; /* Ubicación en la parte inferior */
+  left: 0; /* Alineado a la izquierda */
+  width: 100%; /* Ocupa todo el ancho */
+  background-color: #282c34; /* Fondo gris oscuro */
+  color: #ffffff; /* Texto blanco */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto flotante */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centrar el texto */
+  z-index: 1000; /* Siempre visible */
+  display: block; /* Visible inicialmente */
+  font-family: Arial, sans-serif; /* Fuente general */
+  font-size: 14px; /* Tamaño de texto */
+}
+
+/* Texto del popup */
+.cookie-popup p {
+  margin: 0 0 15px; /* Margen inferior para separar botones */
+}
+
+/* Botones dentro del popup */
+.cookie-buttons {
+  display: flex; /* Alinea los botones horizontalmente */
+  justify-content: center; /* Centra los botones */
+  gap: 10px; /* Espaciado entre botones */
+}
+
+.btn {
+  padding: 10px 20px; /* Tamaño del botón */
+  border: none; /* Sin bordes */
+  border-radius: 20px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Botón aceptar */
+.btn.accept {
+  background-color: #28a745; /* Verde */
+  color: #fff; /* Texto blanco */
+}
+
+.btn.accept:hover {
+  background-color: #218838; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Botón rechazar */
+.btn.decline {
+  background-color: #dc3545; /* Rojo */
+  color: #fff; /* Texto blanco */
+}
+
+.btn.decline:hover {
+  background-color: #c82333; /* Rojo más oscuro al pasar el mouse */
+}
